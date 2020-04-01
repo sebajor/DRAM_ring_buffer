@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/read_controller.xst" -ofn "/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/read_controller.syr" 

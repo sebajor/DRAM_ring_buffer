@@ -1,0 +1,29 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator                        /opt/Xilinx/14.7/ISE_DS/ISE/sysgen
+Matlab 8.2.0.701 (R2013b)               /usr/local/MATLAB/R2013b
+ISE                                     /opt/Xilinx/14.7/ISE_DS/ISE
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: HDL simulation model compilation failed.
+ERROR:HDLCompile...
+     Block: 'fsm_test/Black Box'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'fsm_test/Black Box'
+
+Details:
+HDL simulation model compilation failed.
+ERROR:HDLCompiler:806 - "xlisim_read_control_v2.v" Line 1225:
+Syntax error near "if".
+ERROR:HDLCompiler:806 - "xlisim_read_control_v2.v" Line 1252:
+Syntax error near ")".
+WARNING:HDLCompiler:1563 - "xlisim_read_control_v2.v" Line 1276:
+Empty item in case item list violates IEEE 1364 syntax
+
+Error occurred during "Simulation Initialization".
+
+--------------------------------------------------------------------------------

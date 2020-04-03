@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-01T11:16:06</DateModified>
+  <DateModified>2020-04-02T17:23:50</DateModified>
   <ModuleName>read_controller</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/iseconfig/read_controller.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/</ImplementationReportsDirectory>
   <DateInitialized>2020-04-01T11:16:06</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

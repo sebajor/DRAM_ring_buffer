@@ -1,0 +1,157 @@
+import corr
+import time
+import struct
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.fftpack import fft
+from matplotlib.animation import FuncAnimation
+import ctypes
+from snapshot import plot_snap, plot_spectrums
+from scipy.signal import spectrogram
+
+
+"""Info.. cada address de la dram comtiene 64 valores del tipo
+unsigned char.. Ver como reordenar los datos
+
+"""
+
+
+
+def read_brams(fpga):
+    len_data = 8192*16
+    par = struct.unpack('>8192I',fpga.read('brams_parity', 2**13*4,0))
+    dat0 = fpga.read('brams_dat0', len_data)
+    dat1 = fpga.read('brams_dat1', len_data)
+
+
+    dat0_parse = lib.parse_data(dat0[:len_data],len_data)
+    dat0_char = np.array(struct.unpack('>'+str(len_data*2)+'B', dat0_parse[0:len_data*2]))
+    lib.freeptr(dat0_parse)
+
+    dat1_parse = lib.parse_data(dat1[:len_data],len_data)
+    dat1_char = np.array(struct.unpack('>'+str(len_data*2)+'B', dat1_parse[0:len_data*2]))
+    lib.freeptr(dat1_parse)
+
+
+    ##order the data, the first 16 correspond to the n+1 bits
+    ##ie the odd data is first than the even
+
+    dat0_ = dat0_char.reshape([len_data*2/16, 16])
+    dat1_ = dat1_char.reshape([len_data*2/16, 16])
+
+
+    dat0_even = dat0_[::2,:]
+    dat0_odd  = dat0_[1::2,:]
+    dat1_even = dat1_[::2,:]
+    dat1_odd  = dat1_[1::2,:]
+
+
+    vals = np.hstack([dat0_odd, dat0_even, dat1_odd, dat1_even]) 
+    vals = vals.flat
+    output = struct.pack('>'+str(8192*64)+'B', *vals)
+    return [output, par]
+
+
+
+
+
+
+
+
+
+
+lib = ctypes.CDLL('./parse_data.so')
+
+lib.parse_data.argtypes = [ctypes.c_char_p, ctypes.c_int]
+lib.parse_data.restype = ctypes.POINTER(ctypes.c_char)
+lib.freeptr.argtype = ctypes.c_void_p
+lib.freeptr.restype = None 
+IP = '192.168.0.40'
+#bof = 'sim_dram.bof' #has the old controller /SMA/mlib_dev/sim_dram3
+bof = 'dram_adc.bof.gz'
+
+fpga = corr.katcp_wrapper.FpgaClient(IP)
+time.sleep(1)
+fpga.upload_program_bof(bof,3000)
+time.sleep(2)
+
+
+fpga.write_int('gain',1)
+
+plot_snap(fpga)
+
+
+##get spectrum 
+plot_spectrums(fpga)
+
+
+#fpga.write_int('thresh_read', 4096)
+fpga.write_int('user_addressing',0)
+
+
+
+fpga.write_int('read',0)
+fpga.write_int('rst_brams',1)
+fpga.write_int('rst_brams',0)
+#fpga.write_int('test_mode',1) #nose xq esta al reves :(
+#fpga.write_int('thresh_read',8192)
+fpga.write_int('rst',1)
+#fpga.write_int('test_missing',2**24-2)
+#fpga.write_int('last_dir_miss_read',9)
+time.sleep(0.5)
+fpga.write_int('en_write',1)
+fpga.write_int('rst',0)
+
+
+
+
+
+print('escribiendo dram')
+time.sleep(5)
+
+fpga.write_int('en_write', 0)
+print('dram escrita')
+
+iterations = 2**11
+par = np.zeros([8192, iterations])
+
+
+total_address = 2**24
+len_bram = 8192
+iterations = total_address/len_bram
+f = file('dram_data', 'a')
+
+start = time.time()
+
+fpga.write_int('read',1)
+time.sleep(3)
+errors = 0
+addrs_error = []
+for i in range(2**11):
+    print('iter: %i'%i)
+    counter = 0
+    while(1):
+        if (fpga.read_int('bram_full1')):
+            break
+        elif(counter> 4000):
+            errors = errors+1
+            print('error')
+            break
+        counter = counter+1
+    [vals, par] = read_brams(fpga)
+    fpga.write_int('rst_brams',1)
+    fpga.write_int('rst_brams',0)
+    aux = np.diff(par)
+    ind = np.where(aux!=1)[0]
+    addrs_error.append(ind)
+    f.write(vals) 
+    
+
+f.close()
+
+total = time.time()-start
+print('total time: '+str(total))
+
+print(fpga.read_int('pointer'))
+
+

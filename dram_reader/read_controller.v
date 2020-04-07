@@ -1,61 +1,50 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    11:16:05 04/01/2020 
-// Design Name: 
-// Module Name:    read_controller 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
 module read_controller(
-	clk, ce, en, rst, dram_addr, bram_full, we, addr, max_count, state
-	);
-
-	/*carefull must be take, when you read severeal times
-	the same address could be variation	on the values 
-	of some bits...
-	*/
+    clk,
+    ce,
+    dram_addr,
+    bram_full,
+    rd_val,
+    en,
+    en_read,
+    write_bram,
+    rst,
+	 state,
+    counter,
+	 dram_val
+    );
 	input clk;
    input ce;
-   input en;
-   input rst;
-   input [24:0] dram_addr;
+   output [23:0] dram_addr;
    input bram_full;
-   output we;
-   output [24:0] addr;
+   input rd_val;
+   input en;
+   output en_read;
+   output write_bram;
+   input rst;
+	input [23:0]dram_val;
 	output [3:0] state;
-	input [7:0] max_count;
+    output [7:0]counter;
 	
 	wire clk;
-   wire ce;
-   wire en;
-   wire rst;
-   wire [24:0] dram_addr;
-   wire bram_full;
-   wire we;
+	wire ce;
+	wire [23:0] dram_addr;
+	wire bram_full;
+	wire rd_val;
+	wire en;
+	wire en_read;
+	wire write_bram;
+	wire rst;
 	wire [3:0] state;
-   wire [24:0] addr;
-	wire [7:0] max_count;
-	
-	
+	wire [7:0] counter;
+	wire [23:0] dram_val;
+	 
 	parameter a = 4'd0;
 	parameter b = 4'd1;
 	parameter c = 4'd2;
 	parameter d = 4'd3;
 	parameter e = 4'd4;
 	parameter f = 4'd5;
-	parameter g = 4'd6;
+	parameter g = 4'd6;	
 	parameter h = 4'd7;
 	parameter i = 4'd8;
 	parameter j = 4'd9;
@@ -64,131 +53,97 @@ module read_controller(
 	parameter m = 4'd12;
 	
 	
-	reg [24:0] addr_ =24'd0;  //address counter
-	reg [7:0] counter=7'd0;		// timeout counter
-	reg [24:0] com =  24'd0;		//comparator register
-	
+	reg [3:0] actual_state=a;
 	reg [3:0] next_state;
-	reg [3:0] actual_state = a;
 	
+	reg [23:0] addr_ = 24'd0;
+	reg en_read_=0, write_bram_=0;
+	reg [7:0]counter_ = 8'd0;
 	
-	//output registers
-	reg we_ = 0;
-	
-	
-	
-	
-	
-	always@(posedge clk or posedge rst) begin
+	always@(posedge clk or posedge rst)begin
 		if(rst)
 			actual_state <= a;
 		else
 			actual_state <= next_state;
 	end
 	
+	always@(posedge clk)begin
+		case(actual_state)
+				a:
+					begin
+						counter_ = 0;
+						addr_ =0;
+						en_read_ = 0;
+						write_bram_ = 0;
+					end
+
+				j:
+					counter_ = counter_ +1;
+				c:
+					counter_ = 0;
+				d:
+					en_read_ = 1;
+				e:
+					en_read_ = 1;
+				f:
+					en_read_ = 0;
+				h:
+					counter_ = counter_ +1;
+				i:
+					write_bram_ = 1;
+				k:
+					write_bram_ = 0;
+				m:
+					addr_ = addr_+1;
+		endcase
+	end
 	
-	always@(*) begin
+	
+	always@(*)begin
 		case(actual_state)
 			a:
 				next_state = b;
 			b:
-				if(~en)	next_state = b;
-				else		next_state = c;
-			c:
-				if(counter>max_count)	next_state = e;
-				else if(dram_addr==addr_)	next_state = d;
-				else			next_state = c;
-			d:
-				next_state = f;
-			e:
-				next_state = k;
-			f:
-				if(bram_full)		next_state = i;
-				else			next_state = g;
-			g:
-				if(counter>max_count)	next_state = e;
-				else if(dram_addr==com)	next_state = h;
-				else 			next_state = g;
-			h:
-				next_state = f;
-			i:
-				if(bram_full)		next_state = i;
-				else 			next_state = g;
+				begin
+					if(en)	next_state = j;
+					else		next_state = b;
+				end
 			j:
-				if(bram_full)		next_state = j;
-				else			next_state = l;
-			k:
-				if(bram_full) next_state = j;
-				else		next_state = l;
-			l:
-				if(counter>max_count)		next_state = m;
-				else				next_state = l;
-			m:
-				next_state = f;
-			default:
-				next_state = a;
-		endcase
-	end
-	
-	
-	always@(posedge clk)begin 
-		case(actual_state)
-			a:
-				begin
-					counter = 0;
-					addr_ = 0;
-					we_ = 0;
-					com=0;
-				end
+				if(counter>128)	next_state = c;
+				else					next_state = j;
 			c:
-				counter = counter + 1;
+				next_state = d;
 			d:
-				begin
-					we_ = 1;
-					com = addr_;
-				end
+				next_state = e;
 			e:
-				begin
-					we_ = 1;
-					counter = 0;
-				end
+				next_state = f;
 			f:
-				begin
-					we_ = 0;
-					addr_ = addr_ +1;
-					com = com + 1;
-					counter = 0;
-				end
-			e:
-				begin
-					we_ = 1;
-					counter = 0;
-				end
+				if(rd_val)		next_state = g;
+				else				next_state = f;
 			g:
-				counter = counter +1;
+				begin
+					if((addr_[23:0] == dram_val[23:0]) || (counter>30)) next_state = i;
+					else next_state = h;
+				end
 			h:
-				we_ = 1;
+				next_state = d;
+			i:
+				next_state = k;
 			k:
-				begin
-					we_ = 0;
-					addr_ = addr_ +1;
-				end
+				if(bram_full) 	next_state = l;
+				else 				next_state = m;
 			l:
-				counter = counter+1;
+				if(bram_full)	next_state = l;
+				else 				next_state = m;
 			m:
-				begin
-					we_ =1;
-					com = dram_addr;
-				end
+				next_state = c;
 		endcase
 	end
 	
 	
-	assign we = we_;
-	assign addr = addr_;
-	assign state = actual_state;
-
-	
-
-
+	assign dram_addr[23:0] = addr_[23:0];
+	assign en_read = en_read_;
+	assign write_bram = write_bram_;
+	assign state[3:0] = actual_state[3:0];
+   assign counter[7:0] = counter_[7:0];
 endmodule

@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to /home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.26 secs
  
 --> 
 Parameter xsthdpdir set to /home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> 
 Reading design: read_controller.prj
@@ -46,8 +46,8 @@ Analyzing Verilog file "/home/seba/Workspace/projects/DRAM_ring_buffer/dram_read
 Parsing module <read_controller>.
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.48 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 4.56 secs
  
 --> 
 

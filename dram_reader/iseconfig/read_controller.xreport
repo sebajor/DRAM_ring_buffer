@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-03T13:21:40</DateModified>
+  <DateModified>2020-04-07T12:04:26</DateModified>
   <ModuleName>read_controller</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/iseconfig/read_controller.xreport</SavedFilePath>

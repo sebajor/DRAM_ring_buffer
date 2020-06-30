@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/top/lat_top.vhd" Line 555: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="321" delta="old" >"/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/top/lat_top.vhd" Line 596: Comparison between arrays of unequal length always returns <arg fmt="%s" index="1">FALSE</arg>.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/mmult/fifocontrol.vhd" Line 129: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="old" >"/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/utils/rnd_sat.vhd" Line 127: Range is empty (null range)
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/top/lat_top.vhd</arg>&quot; line <arg fmt="%s" index="2">469</arg>: Output port &lt;<arg fmt="%s" index="3">a_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">axi_top_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/top/lat_top.vhd</arg>&quot; line <arg fmt="%s" index="2">469</arg>: Output port &lt;<arg fmt="%s" index="3">a_last</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">axi_top_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/top/lat_top.vhd</arg>&quot; line <arg fmt="%s" index="2">469</arg>: Output port &lt;<arg fmt="%s" index="3">b_valid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">axi_top_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/top/lat_top.vhd</arg>&quot; line <arg fmt="%s" index="2">469</arg>: Output port &lt;<arg fmt="%s" index="3">b_last</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">axi_top_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">aclk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">aclken</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">areset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">m_axis_c_tready</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">tlast_a</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">tfirst_a</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">data_val_b</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">tlast_b</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">tfirst_b</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/mmult/matstruct.vhd</arg>&quot; line <arg fmt="%s" index="2">734</arg>: Output port &lt;<arg fmt="%s" index="3">rnd_pat_delta</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">VECT_STRUCT[0].R_S_STRUCT[1].RND_SAT_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/mmult/matstruct.vhd</arg>&quot; line <arg fmt="%s" index="2">698</arg>: Output port &lt;<arg fmt="%s" index="3">aout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/mmult/matstruct.vhd</arg>&quot; line <arg fmt="%s" index="2">734</arg>: Output port &lt;<arg fmt="%s" index="3">rnd_pat_delta</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">VECT_STRUCT[1].R_S_STRUCT[0].RND_SAT_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/mmult/matstruct.vhd</arg>&quot; line <arg fmt="%s" index="2">734</arg>: Output port &lt;<arg fmt="%s" index="3">rnd_pat_delta</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">VECT_STRUCT[1].R_S_STRUCT[1].RND_SAT_INST</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">ce</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/mmult/rowfoldstruct.vhd</arg>&quot; line <arg fmt="%s" index="2">299</arg>: Output port &lt;<arg fmt="%s" index="3">yout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/seba/Workspace/projects/DRAM_ring_buffer/dram_reader/ipcore_dir/tmp/_cg/_dbg/linear_algebra_toolkit_v1_0/mmult/rowfoldstruct.vhd</arg>&quot; line <arg fmt="%s" index="2">358</arg>: Output port &lt;<arg fmt="%s" index="3">yout</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">reset</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">tlast_core</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">block_st_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">matmult_cntrl</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">out_rdy_count_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">matmult_top</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">wr_addr_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">syncfifo_1</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">val_b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">matmult_cntrl</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;val_a&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">b_state</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">axi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">a_state</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">axi_slave</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">a_wait_state_count_0_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">axi_slave</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">s_axis_b_tready</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">axi_slave</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;s_axis_a_tready&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[0].TOP_BCELL.bcell_inst/apipe_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[0].ROW_STRUCT[1].BCELL_LAST_ROW.bcell_inst/apipe_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[0].TOP_ICELL_1.icell_inst/apipe_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">VECT_STRUCT[1].OTHER_ARR_GEN.ROWFOLD_INST/COL_STRUCT[1].ROW_STRUCT[1].ICELL_LAST_ROW_LEFT.icell_inst/apipe_1_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">U0/i_synth/i_lat_top/axi_top_inst/axi_slave_inst/b_wait_state_count_0_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">linalg</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">FIFOCONTROL_INST/rd_start_a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;FIFOCONTROL_INST/rd_start_b&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">FIFOCONTROL_INST/wr_en_amat_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">U0/i_synth/i_lat_top/MATMULT.MATMULT_INST/PARALLEL_MULT_GEN.MATMULT_INST/CMPLX_FALSE.MAT_INST</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;FIFOCONTROL_INST/write_en&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

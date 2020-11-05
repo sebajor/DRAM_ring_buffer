@@ -1,0 +1,71 @@
+This version uses the casper-astro mlib with the dram implementation that
+Mike Movius share.
+Download the files from here: 
+https://drive.google.com/file/d/1sdp1kHDDB5wNqE2S14-5lguI5oUv0kL3/view?usp=sharing
+
+DRAM block info:
+    -First and most important!! The dram works in the .fpg file; the bof one 
+    fails!!!!
+
+    -The dram that our roach has is a RDimm M393B5773 o 2GB. It has 3 banks,
+    10 columns, 15 rows and is single rank. Like is RDimm it has 9 bits, the
+    typical 8 ones plus 1 eec bit. The block uses that bit also to store info.
+
+    -In the mpd file you could modify the parameters of the controller
+    (row, column, rank, bank addresses). The values are consistent with our
+    dram, but we are loosing half of the storage space (dont know why)
+
+    -The block of the dram always has a data input size of 288 and you have
+    available 25 addresses. The lower bits are mapped to the columns, then the
+    rows, banks and ranks in increasing order (check ui_cmd.v file). 
+    The standar recomendation is not jumping between rows because you have to 
+    pay it with dead time. Besides you could read/write rows burstly.
+    tldr: change the lower bits of the address for optimal response time.
+
+    -Like we mention we have 288x2**25 bits = 1.125GB available.
+
+    -To write: Keep the address and data in for 2 cycles and at the same time
+    keep the RWn port low and cmd_valid high. 
+   
+    -To read: keep the address for 2 cycles, put RWn high and toogle the
+    cmd_valid. After some time you start to see the data comming out with the 
+    rd_valid port signal high. The output data comes out with half of the
+    frequency, ie if you ask for the address 0-1 the response is going to take
+    4 cycles: 0-0-1-1
+
+    -The change of the RWn is costly, is better to mantain the state of the
+    system and masking the data with the cmd_tag.
+
+    -The usual recomendation is read/write in burst. Even more the dqs are 72 pins
+    so like we are issuing 288 bits we are already writing 4 addresses.
+    
+    -wr_be is byte masking signal; if you want to save whole data just set
+    a UFIX_36 with the value 2**36-1.
+
+    -The signals cmd_ack, rd_tag, phy_ready, cmd_tag are not really usefull.
+    
+    -PPC interface: The DRAM has 288 bits per address, but the powerpc only read
+    256, so you lost 32 bits of data (that gives you 1GB avaiable). The data is
+    distributed as follows: 64-8-64-8-64-8-64-8 where you could read the 32 bits
+    but the 8's one are lost. (This is beacause the OPB bus works with 32 bits
+    data).
+   
+    The read_dram doesnt works.. you have to read the data by yourself.
+    There is a register named ddr3_mem which gives you access to 0x04000000
+    bytes (or bits?) this is our "page_size". To control the page number
+    you could use ddr3_ctrl. For example if we set ddr3_ctrl=3 the data in
+    mem correspond to [3*page_size, 4*page_size-1]. 
+    In this way you could read the whole dram.
+
+    -Note: to use the ppc you dont have to be using the fpga interface..
+    ie dont validate the command.
+
+    -Note: to use the ppc you dont have to be using the fpga interface..
+    ie dont validate the command.
+
+
+     
+
+
+
+

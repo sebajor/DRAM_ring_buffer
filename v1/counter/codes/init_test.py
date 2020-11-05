@@ -24,14 +24,14 @@ per cycles...but is good to look if the data read is fine
 
 IP = '192.168.0.40'
 #bof = 'sim_dram.bof' #has the old controller /SMA/mlib_dev/sim_dram3
-bof = 'dram_fsm.bof.gz'
+bof = 'dram_fsm2.bof.gz' #'dram_fsm.bof.gz'
 
 fpga = corr.katcp_wrapper.FpgaClient(IP)
 time.sleep(1)
 fpga.upload_program_bof(bof,3000)
 time.sleep(2)
 
-fpga.write_int('gain',2**4-1)
+#fpga.write_int('gain',2**4-1)
 #fpga.write_int('thresh_read', 4096)
 fpga.write_int('user_addressing',0)
 

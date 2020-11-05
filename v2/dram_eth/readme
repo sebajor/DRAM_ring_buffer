@@ -1,0 +1,28 @@
+This model is sample test for a ring buffer for roch2 adc data.
+
+We have 3 counters running emulating the input data comming from the 
+3 inputs ADC (we use the fourth as rfi detector).
+For each value we keep 4 bits ie the total amount of data is 32x3 bits
+96 so we need 3 cycles to collect the 288 bits.
+
+
+After the 3 cycles we keep the data in a register and enable the DRAM writing
+
+We read the dram in burst of 220 addresses which give us 7920bytes,
+we input that data into a fifo and in the reading fifo side we use a 
+parallel input-serial output to feed the ethernet block with 8 bit words.
+Once we have the 7920 packet form we generate a eof pulse, which enable the
+reading of new 220 addresses again and triggers the message send.
+The process is repeated for n_pkt times.
+
+After some testing we arrive to the values of the parameters in init.py file
+When you run it the dram get written, then reading and send the data via 
+ethernet.
+To check if the data is consistent you could run the script test.py which 
+review if there is some missing data. If there is a failure review the
+parameters of the model.. the usual problem is the n_pkt and the 
+sleeping time between sends.
+
+
+
+

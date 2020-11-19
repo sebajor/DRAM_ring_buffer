@@ -1,0 +1,15 @@
+Setup:
+    #you need to set this up or yyou are not going to receive
+    #data from the roach!
+    set ipv4 in manual mode with address
+    ip: 10.0.0.29
+    netmask: 255.255.255.255
+    gateway 10.0.0.1
+    
+    the dns and routes could be set in automatic mode
+
+
+The parse_data files are c wrappers to handle the translation between the
+data in 4 bit format to a char who could be handled by the stadard libraries
+(We made it in c because the python option was terrible slow)..you could call
+this wrappers in python using ctypes, see test.py for a demo 

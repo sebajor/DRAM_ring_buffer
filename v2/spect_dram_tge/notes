@@ -1,0 +1,87 @@
+En la logica que genera los burst de datos se calcula el rate con que se 
+genera:
+
+data_rate_gen = payload_len/packet_period*f_clk
+
+data_rate_10gb = data_rate/(8./10*156.25)
+
+
+
+https://www.mail-archive.com/casper@lists.berkeley.edu/msg06874.html  ----> ayuda de interfaces de gbe
+
+https://www.mail-archive.com/casper@lists.berkeley.edu/msg01972.html  ----> diferencias xaui y ten_gbe_v2
+
+
+https://www.mail-archive.com/casper@lists.berkeley.edu/msg01163.html  ----> debbuging pc -roach connection
+
+###pags con info 
+https://blog.cloudflare.com/how-to-receive-a-million-packets/
+https://blog.cloudflare.com/how-to-achieve-low-latency/
+https://cromwell-intl.com/open-source/performance-tuning/ethernet.html
+
+
+
+
+
+to save the data using the interface:
+##also to improve with ethtool you could disable the tx
+sudo ip addr add 192.168.2.10/24 dev enp2s0
+##sudo ethtool -A enp2s0 tx off
+
+
+nc -lvu 192.168.2.10 60000 #recv the data to see if there is any transmition
+sudo ip link set enp2s0 mtu 9000 #enable jumbo frames
+sudo sysctl -w net.core.rmem_max=26214400
+sudo sysctl -w net.core.rmem_default=26214400
+sudo ip link set up dev enp2s0
+sudo tcpdump -B 32768 -s 0 -i enp2s0 udp -N --direction in -p -t -w data -U port 60000
+
+
+
+###otros comandos
+sudo ethtool -K enp2s0 tx off rx off tso off gso off lro off
+sudo ethtool -G enp2s0 rx 4096
+
+sudo ethtool -K enp2s0 lro off
+sudo ethtool -K enp2s0 gro off
+
+
+
+##set ip tables !!
+sudo iptables -I INPUT 1 --src 192.168.2.10/24 -j ACCEPT
+sudo iptables -t raw -I PREROUTING 1 --src 192.168.2.10/24 -j NOTRACK
+
+
+
+###parece que tengo habilitado solo un queue
+lft forever preferred_lft forever
+test@test:~$ ethtool -l enp2s0
+Channel parameters for enp2s0:
+Pre-set maximums:
+RX:		0
+TX:		0
+Other:		1
+Combined:	63
+Current hardware settings:
+RX:		0
+TX:		0
+Other:		1
+Combined:	1
+
+
+
+
+
+#pag para arreglar opciones del kernel
+https://medium.com/@CameronSparr/increase-os-udp-buffers-to-improve-performance-51d167bb1360
+
+##kernel modificatios!!
+sudo sysctl -w net.core.rmem_max=26214400
+sudo sysctl -w net.core.rmem_default=26214400
+
+
+
+
+
+
+
